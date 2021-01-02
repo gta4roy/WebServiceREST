@@ -1,0 +1,10 @@
+TRACE: 2021/01/02 11:42:23 main.go:13: Loging initialised
+TRACE: 2021/01/02 11:42:23 main.go:17: Application started 
+TRACE: 2021/01/02 13:12:29 main.go:28: Loging initialised
+TRACE: 2021/01/02 13:12:29 main.go:76: Application started 
+TRACE: 2021/01/02 13:12:29 main.go:85: Server is ready to handle request %s :9098
+TRACE: 2021/01/02 13:13:06 main.go:64: Server is shutting down  interrupt
+TRACE: 2021/01/02 13:13:06 main.go:93: Server stopped....
+TRACE: 2021/01/02 13:16:30 main.go:28: Loging initialised
+TRACE: 2021/01/02 13:16:30 main.go:76: Application started 
+TRACE: 2021/01/02 13:16:30 main.go:85: Server is ready to handle request %s :9098

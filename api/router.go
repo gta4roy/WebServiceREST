@@ -35,23 +35,23 @@ const (
 
 var routes = Routes{
 	Route{
-		"HealthCheck", "GET", HealthChecURL, funcGetHealth,
+		"HealthCheck", "GET", HealthChecURL, handleGetHealth,
 	},
 	Route{
-		"AddAddress", "POST", AddAddressURL, funcAddAddress,
+		"AddAddress", "POST", AddAddressURL, handleAddAddress,
 	},
 	Route{
-		"ModifyAddress", "POST", ModifyAddressURL, funcModifyAddress,
+		"ModifyAddress", "POST", ModifyAddressURL, handleModifyAddress,
 	},
 	Route{
-		"SearchAddress", "GET", SearchAddressURL, funcSearchAddress,
+		"SearchAddress", "GET", SearchAddressURL, handleSearchAddress,
 	},
 	Route{
-		"PrintAllAddress", "GET", PrintAllAddressURL, funcPrintAllAddress,
+		"PrintAllAddress", "GET", PrintAllAddressURL, handlePrintAllAddress,
 	},
 
 	Route{
-		"DeleteAddress", "GET", DeleteAddressURL, funcDeleteAddress,
+		"DeleteAddress", "GET", DeleteAddressURL, handleDeleteAddress,
 	},
 }
 
@@ -72,26 +72,4 @@ func NewRouter() *mux.Router {
 		router.Methods(route.Method).Path(route.Pattern).Name(route.Name).Handler(handler)
 	}
 	return router
-}
-
-func funcGetHealth(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func funcAddAddress(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func funcModifyAddress(w http.ResponseWriter, r *http.Request) {
-
-}
-func funcSearchAddress(w http.ResponseWriter, r *http.Request) {
-
-}
-func funcPrintAllAddress(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func funcDeleteAddress(w http.ResponseWriter, r *http.Request) {
-
 }

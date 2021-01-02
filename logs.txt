@@ -8,3 +8,40 @@ TRACE: 2021/01/02 13:13:06 main.go:93: Server stopped....
 TRACE: 2021/01/02 13:16:30 main.go:28: Loging initialised
 TRACE: 2021/01/02 13:16:30 main.go:76: Application started 
 TRACE: 2021/01/02 13:16:30 main.go:85: Server is ready to handle request %s :9098
+TRACE: 2021/01/02 16:35:59 main.go:64: Server is shutting down  interrupt
+TRACE: 2021/01/02 16:35:59 main.go:93: Server stopped....
+TRACE: 2021/01/02 16:49:24 main.go:28: Loging initialised
+TRACE: 2021/01/02 16:49:24 main.go:76: Application started 
+TRACE: 2021/01/02 16:49:24 main.go:85: Server is ready to handle request %s :9098
+TRACE: 2021/01/02 16:50:17 main.go:37: URL Path is  /health
+TRACE: 2021/01/02 16:50:17 requestHandler.go:12: Health Request
+TRACE: 2021/01/02 16:50:17 router.go:62: %s %s 5s %s GET /health HealthCheck 284.235µs
+TRACE: 2021/01/02 16:50:25 main.go:37: URL Path is  /health
+TRACE: 2021/01/02 16:50:25 requestHandler.go:12: Health Request
+TRACE: 2021/01/02 16:50:25 router.go:62: %s %s 5s %s GET /health HealthCheck 114.59µs
+TRACE: 2021/01/02 16:52:25 main.go:37: URL Path is  /api/v1/address
+TRACE: 2021/01/02 16:52:30 main.go:37: URL Path is  /api/v1/address
+TRACE: 2021/01/02 16:56:35 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:56:48 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:57:15 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:57:15 requestHandler.go:20: handleAddAddress Request
+TRACE: 2021/01/02 16:57:15 requestHandler.go:54: parsing the input parameters 
+TRACE: 2021/01/02 16:57:15 requestHandler.go:27: abhijit roy 71201 7829712286 41/39 saket palli narhi lucknow
+TRACE: 2021/01/02 16:57:15 router.go:62: %s %s 5s %s POST /api/v1/address/add AddAddress 1.390141ms
+TRACE: 2021/01/02 16:57:26 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:57:26 requestHandler.go:20: handleAddAddress Request
+TRACE: 2021/01/02 16:57:26 requestHandler.go:54: parsing the input parameters 
+TRACE: 2021/01/02 16:57:26 requestHandler.go:27: abhijit roy 71201 7829712286 41/39 saket palli narhi lucknow
+TRACE: 2021/01/02 16:57:26 router.go:62: %s %s 5s %s POST /api/v1/address/add AddAddress 412.493µs
+TRACE: 2021/01/02 16:57:35 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:57:35 requestHandler.go:20: handleAddAddress Request
+TRACE: 2021/01/02 16:57:35 requestHandler.go:54: parsing the input parameters 
+TRACE: 2021/01/02 16:57:35 requestHandler.go:27: abhijit roy 71201 7829712286 41/39 saket palli narhi lucknow
+TRACE: 2021/01/02 16:57:35 router.go:62: %s %s 5s %s POST /api/v1/address/add AddAddress 442.621µs
+TRACE: 2021/01/02 16:57:42 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/01/02 16:57:42 requestHandler.go:20: handleAddAddress Request
+TRACE: 2021/01/02 16:57:42 requestHandler.go:54: parsing the input parameters 
+TRACE: 2021/01/02 16:57:42 requestHandler.go:27: abhijit roy 71201 7829712286 41/39 saket palli narhi lucknow
+TRACE: 2021/01/02 16:57:42 router.go:62: %s %s 5s %s POST /api/v1/address/add AddAddress 532.842µs
+TRACE: 2021/01/02 16:57:54 main.go:64: Server is shutting down  interrupt
+TRACE: 2021/01/02 16:57:54 main.go:93: Server stopped....

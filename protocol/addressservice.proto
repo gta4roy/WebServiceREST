@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package protocol;
+
+message Person{
+    string name = 1;
+    string id  = 2;
+    string phone = 3;
+    string address = 4;
+    string city = 5;
+    string pin = 6;
+}
+
+message PersonID {
+    string id = 1;
+}
+
+message PersonList{
+    repeated Person personsList = 1;
+}
+
+message ServiceResponse{
+    bool is_success = 1;
+    string error =2;
+}
+
+message ModifyPerson{
+    PersonID id = 1;
+    Person   modifiedPerson = 2;
+}
+
+message EmptyParams {}
+
+
+service AddressService {
+    rpc Search(PersonID) returns (PersonList) {}
+    rpc Add(Person) returns (ServiceResponse) {}
+    rpc Modify(ModifyPerson) returns (ServiceResponse) {}
+    rpc Delete(PersonID) returns (ServiceResponse) {}
+    rpc ListAll(EmptyParams) returns (PersonList) {}
+}
+
+
+message EventStore{
+    string activity =1;
+    bool activity_status  =2;
+}

@@ -65,6 +65,7 @@ func graceFullShutdown(server *http.Server, quit <-chan os.Signal, done chan<- b
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 
+	router.CloseConnections()
 	server.SetKeepAlivesEnabled(false)
 	if err := server.Shutdown(ctx); err != nil {
 		log.Trace.Println("Could not gracefull shutdown server 5v\n", err)

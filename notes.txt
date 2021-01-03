@@ -1,0 +1,22 @@
+database 
+
+username gta4roy 
+password 71201
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+
+CREATE  TABLE `AddressBook` (
+  `id` VARCHAR(75) NOT NULL ,
+  `name` VARCHAR(150) NOT NULL ,
+  `address` VARCHAR(255) ,
+  `phone` VARCHAR(75) ,
+  `city` VARCHAR(75) ,
+  `pin` VARCHAR(75) ,
+  PRIMARY KEY (`id`) )
+
+
+https://www.golangprograms.com/example-of-golang-crud-using-mysql-from-scratch.html

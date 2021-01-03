@@ -8,6 +8,16 @@ import (
 	"net/http"
 )
 
+var serviceProxy ServiceProxy
+
+func init() {
+	serviceProxy.initialiseConnection()
+}
+
+func CloseConnections() {
+	serviceProxy.CloseClientConnect()
+}
+
 func handleGetHealth(w http.ResponseWriter, r *http.Request) {
 	log.Trace.Println("Health Request")
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
@@ -30,8 +40,7 @@ func handleAddAddress(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 
 	var responseData model.ResponseModel
-	responseData.Status = model.CODE_SUCCESS
-	responseData.Message = model.MSG_SUCCESS_SAVE
+	responseData = serviceProxy.AddAddress(personDetails)
 	json.NewEncoder(w).Encode(responseData)
 
 }
@@ -50,8 +59,7 @@ func handleModifyAddress(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 
 	var responseData model.ResponseModel
-	responseData.Status = model.CODE_SUCCESS
-	responseData.Message = model.MSG_SUCCESS_SAVE
+	responseData = serviceProxy.ModifyAddress(personDetails.Id, personDetails)
 	json.NewEncoder(w).Encode(responseData)
 
 }
@@ -63,24 +71,22 @@ func handleSearchAddress(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 
-	var responseData model.ResponseModel
-	responseData.Status = model.CODE_SUCCESS
-	responseData.Message = model.MSG_SUCCESS_SAVE
-	json.NewEncoder(w).Encode(responseData)
+	var personList model.PersonModelArray
+	personList.PersonRecords = serviceProxy.SearchAddress(personId)
+
+	json.NewEncoder(w).Encode(personList)
 
 }
 func handlePrintAllAddress(w http.ResponseWriter, r *http.Request) {
 	log.Trace.Println("handlePrintAllAddress Request")
-	personId := r.FormValue("id")
-	log.Trace.Printf("%s", personId)
 
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 
-	var responseData model.ResponseModel
-	responseData.Status = model.CODE_SUCCESS
-	responseData.Message = model.MSG_SUCCESS_SAVE
-	json.NewEncoder(w).Encode(responseData)
+	var personList model.PersonModelArray
+	personList.PersonRecords = serviceProxy.ListOfAddress()
+
+	json.NewEncoder(w).Encode(personList)
 }
 
 func handleDeleteAddress(w http.ResponseWriter, r *http.Request) {
@@ -91,9 +97,7 @@ func handleDeleteAddress(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
 
-	var responseData model.ResponseModel
-	responseData.Status = model.CODE_SUCCESS
-	responseData.Message = model.MSG_SUCCESS_SAVE
+	responseData := serviceProxy.DeleteAddress(personId)
 	json.NewEncoder(w).Encode(responseData)
 }
 

@@ -1,0 +1,73 @@
+TRACE: 2021/01/03 19:50:56 service.go:84: Loging initialised
+TRACE: 2021/01/03 19:50:56 service.go:95: Server listening on the port : :50051
+TRACE: 2021/01/03 19:51:24 store.go:30: Add Service Request 
+TRACE: 2021/01/03 19:51:24 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 19:51:24 service.go:28: Adding an address ..  :
+TRACE: 2021/01/03 19:51:24 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 19:51:49 store.go:30: Add Service Request 
+TRACE: 2021/01/03 19:51:49 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 19:51:49 service.go:28: Adding an address ..  :
+TRACE: 2021/01/03 19:51:49 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 19:53:33 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 19:53:33 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 19:53:33 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 20:02:32 store.go:30: Add Service Request 
+TRACE: 2021/01/03 20:02:32 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 20:02:32 service.go:28: Adding an address ..  :
+TRACE: 2021/01/03 20:02:32 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 20:02:41 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 20:02:41 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 20:02:41 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 20:03:22 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 20:03:22 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 20:03:22 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 20:03:28 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 20:03:28 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 20:03:28 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 20:51:28 service.go:84: Loging initialised
+TRACE: 2021/01/03 20:51:28 service.go:95: Server listening on the port : :50051
+TRACE: 2021/01/03 20:59:43 service.go:84: Loging initialised
+TRACE: 2021/01/03 20:59:43 service.go:95: Server listening on the port : :50051
+TRACE: 2021/01/03 21:01:35 service.go:84: Loging initialised
+TRACE: 2021/01/03 21:01:35 service.go:95: Server listening on the port : :50051
+TRACE: 2021/01/03 21:01:39 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:01:39 store.go:75: Update Request
+TRACE: 2021/01/03 21:01:39 service.go:37: Modifying an address ..  :
+TRACE: 2021/01/03 21:01:39 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:02:02 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:02:02 store.go:75: Update Request
+TRACE: 2021/01/03 21:02:02 service.go:37: Modifying an address ..  :
+TRACE: 2021/01/03 21:02:02 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:02:04 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:02:04 store.go:75: Update Request
+TRACE: 2021/01/03 21:02:04 service.go:37: Modifying an address ..  :
+TRACE: 2021/01/03 21:02:04 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:02:33 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:02:33 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 21:02:33 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:03:23 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:03:23 store.go:75: Update Request
+TRACE: 2021/01/03 21:03:23 service.go:37: Modifying an address ..  :
+TRACE: 2021/01/03 21:03:23 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:03:29 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:03:29 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 21:03:29 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:04:56 store.go:91: Search Request
+TRACE: 2021/01/03 21:04:56 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:04:56 service.go:64: Search an address ..  :
+TRACE: 2021/01/03 21:04:56 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:05:02 store.go:91: Search Request
+TRACE: 2021/01/03 21:05:02 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:05:02 service.go:64: Search an address ..  :
+TRACE: 2021/01/03 21:05:02 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:05:07 store.go:91: Search Request
+TRACE: 2021/01/03 21:05:07 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:05:07 service.go:64: Search an address ..  :
+TRACE: 2021/01/03 21:05:07 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:06:47 store.go:119: Delete Request
+TRACE: 2021/01/03 21:06:47 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:06:47 service.go:55: Deleting an address ..  :
+TRACE: 2021/01/03 21:06:47 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/01/03 21:06:56 store.go:24: Service got connected to SQL Server
+TRACE: 2021/01/03 21:06:56 service.go:46: Search an address ..  :
+TRACE: 2021/01/03 21:06:56 service.go:77: Published message on suject :Order.TestEvent

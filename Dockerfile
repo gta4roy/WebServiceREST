@@ -23,7 +23,7 @@ RUN go build -o address_service .
 RUN cd /app
 
 
-CMD [ "chmod 755 ./startService.sh","./startService.sh" ]
+CMD [ "./startService.sh" ]
 
 
 

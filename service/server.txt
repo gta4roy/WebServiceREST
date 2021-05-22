@@ -82,3 +82,7 @@ TRACE: 2021/05/22 11:48:52 service.go:77: Published message on suject :Order.Tes
 TRACE: 2021/05/22 11:49:14 store.go:24: Service got connected to SQL Server
 TRACE: 2021/05/22 11:49:14 service.go:46: Search an address ..  :
 TRACE: 2021/05/22 11:49:14 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/05/22 13:20:11 service.go:84: Loging initialised
+TRACE: 2021/05/22 13:20:11 service.go:95: Server listening on the port : :50051
+TRACE: 2021/05/22 13:21:01 store.go:30: Service got connected to SQL Server
+TRACE: 2021/05/22 13:21:01 store.go:61: Failed to execute select all request Error 1049: Unknown database 'tcp(localhost:3306)address'

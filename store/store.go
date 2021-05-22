@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"gta4roy/address_service/log"
 	"gta4roy/address_service/protocol"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -14,10 +15,15 @@ type AddressDB struct {
 
 func dbConn() (db *sql.DB) {
 	dbDriver := "mysql"
-	dbUser := "gta4roy"
-	dbPass := "71201"
-	dbName := "address"
-	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
+	//dbUser := "gta4roy"
+	//dbPass := "71201"
+	//dbName := "address"
+
+	dbUser := os.Getenv("MYSQL_USER")
+	dbPass := os.Getenv("MYSQL_PASSWORD")
+	dbName := os.Getenv("DB_NAME")
+
+	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/tcp(localhost:3306)"+dbName)
 	if err != nil {
 		panic(err.Error())
 	}

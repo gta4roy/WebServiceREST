@@ -178,3 +178,10 @@ TRACE: 2021/05/22 11:49:14 requestHandler.go:81: handlePrintAllAddress Request
 TRACE: 2021/05/22 11:49:14 router.go:62: %s %s 5s %s GET /api/v1/address/getall PrintAllAddress 19.217941ms
 TRACE: 2021/05/22 11:51:06 main.go:64: Server is shutting down  interrupt
 TRACE: 2021/05/22 11:51:06 main.go:94: Server stopped....
+TRACE: 2021/05/22 13:20:11 main.go:28: Loging initialised
+TRACE: 2021/05/22 13:20:11 main.go:77: Application started 
+TRACE: 2021/05/22 13:20:11 main.go:86: Server is ready to handle request %s :9098
+TRACE: 2021/05/22 13:21:01 main.go:37: URL Path is  /api/v1/address/getall
+TRACE: 2021/05/22 13:21:01 requestHandler.go:81: handlePrintAllAddress Request
+TRACE: 2021/05/22 13:21:33 main.go:37: URL Path is  /api/v1/address/getall
+TRACE: 2021/05/22 13:21:33 requestHandler.go:81: handlePrintAllAddress Request

@@ -1,9 +1,9 @@
 package store
 
 import (
-	"AddressService/log"
-	"AddressService/protocol"
 	"database/sql"
+	"gta4roy/address_service/log"
+	"gta4roy/address_service/protocol"
 
 	_ "github.com/go-sql-driver/mysql"
 )

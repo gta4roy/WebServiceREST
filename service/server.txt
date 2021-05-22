@@ -71,3 +71,14 @@ TRACE: 2021/01/03 21:06:47 service.go:77: Published message on suject :Order.Tes
 TRACE: 2021/01/03 21:06:56 store.go:24: Service got connected to SQL Server
 TRACE: 2021/01/03 21:06:56 service.go:46: Search an address ..  :
 TRACE: 2021/01/03 21:06:56 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/05/22 11:45:33 service.go:84: Loging initialised
+TRACE: 2021/05/22 11:45:33 service.go:95: Server listening on the port : :50051
+TRACE: 2021/05/22 11:46:19 service.go:84: Loging initialised
+TRACE: 2021/05/22 11:46:19 service.go:95: Server listening on the port : :50051
+TRACE: 2021/05/22 11:48:52 store.go:30: Add Service Request 
+TRACE: 2021/05/22 11:48:52 store.go:24: Service got connected to SQL Server
+TRACE: 2021/05/22 11:48:52 service.go:28: Adding an address ..  :
+TRACE: 2021/05/22 11:48:52 service.go:77: Published message on suject :Order.TestEvent
+TRACE: 2021/05/22 11:49:14 store.go:24: Service got connected to SQL Server
+TRACE: 2021/05/22 11:49:14 service.go:46: Search an address ..  :
+TRACE: 2021/05/22 11:49:14 service.go:77: Published message on suject :Order.TestEvent

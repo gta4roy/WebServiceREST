@@ -165,3 +165,16 @@ TRACE: 2021/01/03 21:06:56 requestHandler.go:81: handlePrintAllAddress Request
 TRACE: 2021/01/03 21:06:56 router.go:62: %s %s 5s %s GET /api/v1/address/getall PrintAllAddress 9.891072ms
 TRACE: 2021/01/03 21:07:26 main.go:64: Server is shutting down  interrupt
 TRACE: 2021/01/03 21:07:26 main.go:94: Server stopped....
+TRACE: 2021/05/22 11:46:33 main.go:28: Loging initialised
+TRACE: 2021/05/22 11:46:33 main.go:77: Application started 
+TRACE: 2021/05/22 11:46:33 main.go:86: Server is ready to handle request %s :9098
+TRACE: 2021/05/22 11:48:52 main.go:37: URL Path is  /api/v1/address/add
+TRACE: 2021/05/22 11:48:52 requestHandler.go:30: handleAddAddress Request
+TRACE: 2021/05/22 11:48:52 requestHandler.go:105: parsing the input parameters 
+TRACE: 2021/05/22 11:48:52 requestHandler.go:37: alfred simson 71202 7829712286 41/109 saket palli narhi kanpur
+TRACE: 2021/05/22 11:48:52 router.go:62: %s %s 5s %s POST /api/v1/address/add AddAddress 32.181295ms
+TRACE: 2021/05/22 11:49:14 main.go:37: URL Path is  /api/v1/address/getall
+TRACE: 2021/05/22 11:49:14 requestHandler.go:81: handlePrintAllAddress Request
+TRACE: 2021/05/22 11:49:14 router.go:62: %s %s 5s %s GET /api/v1/address/getall PrintAllAddress 19.217941ms
+TRACE: 2021/05/22 11:51:06 main.go:64: Server is shutting down  interrupt
+TRACE: 2021/05/22 11:51:06 main.go:94: Server stopped....

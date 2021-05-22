@@ -1,7 +1,7 @@
 package api
 
 import (
-	"AddressService/log"
+	"gta4roy/address_service/log"
 	"net/http"
 	"time"
 

@@ -1,11 +1,11 @@
 package main
 
 import (
-	"AddressService/log"
-	"AddressService/protocol"
-	"AddressService/store"
-	"AddressService/util"
 	"context"
+	"gta4roy/address_service/log"
+	"gta4roy/address_service/protocol"
+	"gta4roy/address_service/store"
+	"gta4roy/address_service/util"
 	"net"
 
 	"google.golang.org/grpc"

@@ -1,9 +1,9 @@
 package api
 
 import (
-	"AddressService/log"
-	"AddressService/model"
 	"encoding/json"
+	"gta4roy/address_service/log"
+	"gta4roy/address_service/model"
 	"io/ioutil"
 	"net/http"
 )

@@ -1,10 +1,10 @@
 package api
 
 import (
-	"AddressService/log"
-	"AddressService/model"
-	"AddressService/protocol"
 	"context"
+	"gta4roy/address_service/log"
+	"gta4roy/address_service/model"
+	"gta4roy/address_service/protocol"
 
 	"google.golang.org/grpc"
 )

@@ -1,11 +1,11 @@
 package main
 
 import (
-	router "AddressService/api"
-	"AddressService/log"
-	"AddressService/util"
 	"context"
 	"flag"
+	router "gta4roy/address_service/api"
+	"gta4roy/address_service/log"
+	"gta4roy/address_service/util"
 	"net/http"
 	"os"
 	"os/signal"

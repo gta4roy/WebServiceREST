@@ -2,6 +2,7 @@ package store
 
 import (
 	"database/sql"
+	"fmt"
 	"gta4roy/address_service/log"
 	"gta4roy/address_service/protocol"
 	"os"
@@ -22,11 +23,18 @@ func dbConn() (db *sql.DB) {
 	dbUser := os.Getenv("MYSQL_USER")
 	dbPass := os.Getenv("MYSQL_PASSWORD")
 	dbName := os.Getenv("DB_NAME")
+	hostname := os.Getenv("HOST")
+	sqlPort := os.Getenv("MYSQL_PORT")
 
-	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@/tcp(localhost:3306)"+dbName)
+	fmt.Println("Host Name Picked " + hostname)
+	fmt.Println("SQL Port " + sqlPort)
+	fmt.Println("Connection String " + dbUser + ":" + dbPass + "@tcp(" + hostname + ":" + sqlPort + ")/" + dbName)
+
+	db, err := sql.Open(dbDriver, dbUser+":"+dbPass+"@tcp("+hostname+":"+sqlPort+")/"+dbName)
 	if err != nil {
 		panic(err.Error())
 	}
+
 	log.Trace.Println("Service got connected to SQL Server")
 	return db
 }
